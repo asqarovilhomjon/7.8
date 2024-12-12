@@ -55,9 +55,7 @@ const Search = () => {
         <div className="w-full flex justify-center items-center">
           <form action="" className="flex relative w-[380px]" onSubmit={handleSubmit}>
             <FiSearch
-              className={`absolute top-[50%] translate-y-[-50%] left-5 text-2xl text-red-person ${
-                Mode ? "bg-inherit" : "bg-[#c5c5c5d8]"
-              }`}
+              className={`absolute top-[50%] translate-y-[-50%] left-5 text-2xl text-red-person bg-inherit`}
             />
             <input
               value={searchValue}
@@ -67,7 +65,7 @@ const Search = () => {
               className={`p-5 rounded-xl indent-7 flex flex-wrap text-xl border border-black ${
                 Mode
                   ? "bg-inherit outline-red-person"
-                  : "bg-inherit text-white"
+                  : "bg-white text-black"
               } w-full`}
             />
           </form>
